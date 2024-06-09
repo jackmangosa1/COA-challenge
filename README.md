@@ -1,7 +1,8 @@
 # COA-challenge 🎯
 
 This is a coding challenge for the Code Of Africa application.
-Prerequisite: Install Node.js on your machine. You can download it from the official website: https://nodejs.org/en/download/
+Prerequisite: Install Node.js on your machine.
+You can download it from the official website: https://nodejs.org/en/download/
 
 # Challenge 1: Finding a Contiguous Subarray with a Given Sum 🔍
 
