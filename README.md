@@ -17,7 +17,7 @@ Step two: Then, navigate to the challenges folder:
    cd COA-challenge/challenges
 ```
 
-# Challenge 1: Finding a Contiguous Subarray with a Given Sum 🔍
+# Challenge 1: Finding a Contiguous Subarray with a Given Sum
 
 A. Approach:
 
@@ -34,7 +34,7 @@ Run the file using Node.js by executing the following command:
 
 This will execute the test cases and print the output to the console.
 
-# Challenge 2: Transforming a String Based on Length Divisibility 🔡
+# Challenge 2: Transforming a String Based on Length Divisibility
 
 A. Approach:
 
