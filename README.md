@@ -1,7 +1,9 @@
-COA-challenge 🎯
+# COA-challenge 🎯
+
 This is a coding challenge for the Code Of Africa application.
 Prerequisite: Install Node.js on your machine. You can download it from the official website: https://nodejs.org/en/download/
-Challenge 1: Finding a Contiguous Subarray with a Given Sum 🔍
+
+# Challenge 1: Finding a Contiguous Subarray with a Given Sum 🔍
 
 # Approach:
 
@@ -13,7 +15,8 @@ The approach used to solve this problem is the sliding window technique. We init
 🚀 Run the file using Node.js by executing the following command: node arrayMap.js
 
 This will execute the test cases and print the output to the console. 💻
-Challenge 2: Transforming a String Based on Length Divisibility 🔡
+
+# Challenge 2: Transforming a String Based on Length Divisibility 🔡
 
 # Approach:
 
