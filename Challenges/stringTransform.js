@@ -1,55 +1,70 @@
-// Function to transform the string based on the given rules
+/**
+ * Transforms a given string based on the following rules:
+ * - If the length of the string is divisible by 3, reverse the entire string.
+ * - If the length of the string is divisible by 5, replace each character with its ASCII code.
+ * - If the length of the string is divisible by both 3 and 5 (i.e., divisible by 15), perform both operations in the order specified above.
+ *
+ * @param {string} str - The input string to be transformed.
+ * @returns {string} The transformed string.
+ */
 function transformString(str) {
-  const length = str.length; // Get the length of the string
+  // Get the length of the input string
+  const len = str.length;
 
-  // If the length is divisible by 3 and 5 (i.e., divisible by 15)
-  if (length % 3 === 0 && length % 5 === 0) {
+  // Check if the length is divisible by 15
+  if (len % 15 === 0) {
     // Reverse the string first
-    str = str.split("").reverse().join(""); // Convert the string to an array, reverse it, and join it back into a string
+    const reversedStr = str.split("").reverse().join("");
 
     // Replace each character with its ASCII code
-    str = str
+    return reversedStr
       .split("")
       .map((char) => char.charCodeAt(0))
-      .join(" "); // Convert the string to an array, replace each character with its ASCII code, and join the array with spaces
+      .join(" ");
   }
-  // If the length is divisible by 3
-  else if (length % 3 === 0) {
+  // Check if the length is divisible by 3
+  else if (len % 3 === 0) {
     // Reverse the string
-    str = str.split("").reverse().join(""); // Convert the string to an array, reverse it, and join it back into a string
+    return str.split("").reverse().join("");
   }
-  // If the length is divisible by 5
-  else if (length % 5 === 0) {
+  // Check if the length is divisible by 5
+  else if (len % 5 === 0) {
     // Replace each character with its ASCII code
-    str = str
+    return str
       .split("")
       .map((char) => char.charCodeAt(0))
-      .join(" "); // Convert the string to an array, replace each character with its ASCII code, and join the array with spaces
+      .join(" ");
   }
-
-  return str; // Return the transformed string
+  // If none of the above conditions are met, return the original string
+  else {
+    return str;
+  }
 }
 
 // Test cases
+
+/**
+ * Function to run all the test cases.
+ */
 function runTests() {
   console.log("Test Case 1:");
-  console.log(transformString("Hamburger")); // Expected output: "regrubmaH"
+  console.log(transformString("Hamburger")); // Output: regrubmaH
 
   console.log("\nTest Case 2:");
-  console.log(transformString("Pizza")); // Expected output: "80 105 122 122 97"
+  console.log(transformString("Pizza")); // Output: 80 105 122 122 97
 
   console.log("\nTest Case 3:");
-  console.log(transformString("Chocolate Chip Cookie")); // Expected output: "eikooCpihCetalocohC"
+  console.log(transformString("Chocolate Chip Cookie")); // Output: eikooCpihCetalocohC
 
   console.log("\nTest Case 4:");
-  console.log(transformString("Spaghetti")); // Expected output: "105 116 116 101 104 103 97 112 83"
+  console.log(transformString("Ice Cream")); // Output: maerC ecI
 
   console.log("\nTest Case 5:");
-  console.log(transformString("Tacos")); // Expected output: "socaT"
+  console.log(transformString("Spaghetti")); // Output: ittehgapS
 
   console.log("\nTest Case 6:");
-  console.log(transformString("Ice Cream Sundae")); // Expected output: "eadnuSmaerCecI"
+  console.log(transformString("Taco")); // Output: Taco
 }
 
-// Run the tests
+// Run the test cases
 runTests();
