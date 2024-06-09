@@ -24,7 +24,7 @@ The sliding window technique is utilized. Two pointers, left and right, represen
 
 # B. Setup Instructions:
 
-Open a terminal or command prompt and navigate to the /challenges directory.
+Open a terminal or command prompt after navigation to the /challenges directory.
 Run the file using Node.js by executing the following command:
 
 ```bash
@@ -41,7 +41,7 @@ We check the divisibility of the string's length by 3, 5, and 15. Based on these
 
 # B. Setup Instructions:
 
-Open a terminal or command prompt and navigate to the /challenges directory.
+Open a terminal or command prompt after navigation to the /challenges directory.
 Run the file using Node.js by executing the following command:
 
 ```bash
