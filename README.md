@@ -5,7 +5,7 @@ Prerequisite: Install Node.js on your machine. You can download it from the offi
 
 # Set up
 
-Stap one: To clone the repository, use the following command:
+Step one: To clone the repository, use the following command:
 
 ```bash
    git clone https://github.com/jackmangosa1/COA-challenge.git
